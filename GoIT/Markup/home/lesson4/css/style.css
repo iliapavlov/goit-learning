@@ -1,0 +1,52 @@
+body {
+	background-color: #c9f9f9; /*заменить*/
+	/*background: url(../img/background.jpg);*/
+	font-family: Tahoma, Arial, sans-serif;
+}
+.wrapper {
+	background-color: #fff; /*не обязательно?*/
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+.header {
+	position: relative;
+}
+h1 {
+	padding: 10px 0 0 27px;
+}
+.container {
+    float:left;
+}
+.travel {
+	position: absolute;
+	top: 115px;
+	left: 100px;
+}
+.contacts {
+	width: 324px;
+	float: right;
+	padding: 10px 32px 0 0;
+	font-size: 12px;
+	line-height: 17px;
+	color: #41a1b9;
+}
+P {
+	padding-left: 200px;
+}
+.phrase {
+	font-size: 14px;
+	line-height: 20px;
+}
+.courses {
+	/*float: left;*/
+}
+.courses a {
+    display: block;
+}
+
+.photo {
+	border-top: 1px solid #128aa7;
+	border-bottom: 1px solid #128aa7;
+}
