@@ -8,45 +8,81 @@ body {
 	width: 1000px;
 	margin: 0 auto;
 }
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	width: 100%;
+}
 
 /*HEADER*/
 .header {
-	position: relative;
 }
 h1 {
 	padding: 10px 0 0 27px;
+	position: relative;
+	z-index: 2;
 }
-.container {
+img {
+	display: block; /*убирает отступ базовой линии*/
+}
+.container1 {
     float:left;
+    position: relative;
 }
-.travel {
+.container2 {
+    float:right;
+    padding-top: 10px;
+}
+.travel_to_asia {
 	position: absolute;
 	top: 115px;
 	left: 100px;
+	z-index: 1;
 }
-.contacts {
-	width: 324px;
-	float: right;
-	padding: 10px 32px 0 0;
+.container2 p {
+	padding: 0 0 0 200px;
 	font-size: 12px;
 	line-height: 17px;
 	color: #41a1b9;
 }
-P {
-	padding-left: 200px;
-}
-.phrase {
+.label1 {
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 22px;
 }
-.courses {
-	/*float: left;*/
+.menu-courses {
+	margin-top: 33px;
 }
-.courses a {
-    display: block;
+
+.menu-courses li{
+	display: inline-block;
+	width: 55px;
+	font-size: 10px;
+}
+.menu-courses a {
+    text-align: center;
+    color: #329ab3;
 }
 
 .photo {
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
 }
+
+/*MENU
+
+.menu{
+
+}
+.menu a{
+	display: block;
+	line-height: 20px;
+	padding: 0 33px;
+	color: #fff;
+	font-size: 14px;
+}
+.menu li{
+	float: left;
+	position: relative;
+}*/
