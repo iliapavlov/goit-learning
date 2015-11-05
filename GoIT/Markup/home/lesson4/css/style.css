@@ -1,88 +1,213 @@
 body {
-	background-color: #c9f9f9; /*заменить*/
-	/*background: url(../img/background.jpg);*/
+	background: url(../img/background.jpg) repeat-y;
+	background-position: 0 -35px;
 	font-family: Tahoma, Arial, sans-serif;
 }
 .wrapper {
-	background-color: #fff; /*не обязательно?*/
 	width: 1000px;
 	margin: 0 auto;
+	box-shadow: 0px 0px 9px 0px rgba(11,93,115,1);
 }
 .clearfix:after{
-	content: "";
+	content: ".";
 	display: block;
 	clear: both;
 	height: 0;
-	width: 100%;
+	visibility: hidden;
 }
-
 /*HEADER*/
 .header {
-}
-h1 {
-	padding: 10px 0 0 27px;
-	position: relative;
-	z-index: 2;
-}
-img {
-	display: block; /*убирает отступ базовой линии*/
+	background-color: #fff;
 }
 .container1 {
+ 	position: relative;
     float:left;
-    position: relative;
+    padding-top: 14px;
+    line-height: 0; /*убирает отступ базовой линии текста*/
 }
 .container2 {
     float:right;
-    padding-top: 10px;
+}
+.container1 a {
+	position: relative;
+	padding: 10px 0 0 27px;
+	z-index: 2;
 }
 .travel_to_asia {
 	position: absolute;
-	top: 115px;
+	top: 120px;
 	left: 100px;
 	z-index: 1;
 }
 .container2 p {
-	padding: 0 0 0 200px;
+	width: 123px;
+	padding: 10px 0 0 235px;
 	font-size: 12px;
 	line-height: 17px;
 	color: #41a1b9;
 }
-.label1 {
+.text1 {
 	font-size: 14px;
 	line-height: 22px;
 }
 .menu-courses {
-	margin-top: 33px;
+	padding: 33px 0 8px 0;
 }
-
-.menu-courses li{
+.menu-courses li {
 	display: inline-block;
-	width: 55px;
+	width: 41px;
 	font-size: 10px;
+	padding: 0 6px;
+	text-align: center;
 }
-.menu-courses a {
-    text-align: center;
+.menu-courses li:nth-child(5) {
+	width: 55px;
+	padding: 0 3px 0 2px;
+}
+.menu-courses li:nth-child(6) {
+	width: 48px;
+	padding: 0 32px 0 3px;;
+}
+.menu-courses a {  
     color: #329ab3;
 }
 
 .photo {
+	float: left;
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
+	line-height: 0;
 }
 
-/*MENU
-
-.menu{
-
+/*MENU*/
+.menu {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,373737+0,303030+100 */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e5799 0%, #373737 0%, #303030 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#373737), color-stop(100%,#303030)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#373737 0%,#303030 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #1e5799 0%,#373737 0%,#303030 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #1e5799 0%,#373737 0%,#303030 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #1e5799 0%,#373737 0%,#303030 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    border-bottom: #000000;
+    font-size: 14px;
+    position: relative;
+    z-index: 4;
 }
-.menu a{
-	display: block;
-	line-height: 20px;
-	padding: 0 33px;
+.menu a {
+	text-decoration: none;
 	color: #fff;
-	font-size: 14px;
+	display: block;
+}
+.menu > li > a{	
+	line-height: 27px;
+	padding: 0 33px;
+	position: relative;
+}
+.triangle:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top:11px;
+	right: 17px;
+	height: 6px;
+	width: 5px;
+	background: url(../img/icon.png) 0 0 no-repeat;
 }
 .menu li{
 	float: left;
 	position: relative;
-}*/
+}
+.menu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.menu ul{
+	visibility: hidden;
+	position: absolute;
+	top: 0%;
+	left:23px;
+	transition: all 0.3s;
+	opacity: 0;
+}
+.menu ul li {
+	background-color: #303030;
+}
+.menu ul a{
+	padding: 0 20px 0 9px;
+	line-height: 24px;
+}
+/*CONTENT*/
+.content {
+	position: relative;
+	z-index: 3;
+}
+#back3 {
+    float:left;
+    width:100%;
+    background:#edeef0;
+    overflow:hidden;
+    position:relative;
+}
+#back2 {
+    float:left;
+    width:100%;
+    background:#fff;
+    position:relative;
+    right:21%;
+    border-right: 1px solid #c7cacf;
+}
+#back1 {
+    float:left;
+    width:100%;
+    background:#edeef0;
+    position:relative;
+    right:58%;
+    border-right: 1px solid #c7cacf;
+}
+#col1 {
+    float:left;
+    width:17%;
+    position:relative;
+    left:81%;
+    overflow: hidden;
+}
+#col2 {
+    float:left;
+    width:54%;
+    min-height: 1px;
+    position:relative;
+    left:85%;
+    overflow: hidden;
+}
+#col3 {
+    float:left;
+    width:17%;
+    position:relative;
+    left:89%;
+    overflow: hidden;
+}
+h3 {
+	font-size: 18px;
+	text-align: center;
+	padding: 11px 0 11px 0;
+}
+.content p {
+	line-height: 24px;
+	font-size: 14px;
+}
+/*FOOTER*/
+.footer p {
+	line-height: 33px;
+	font-size: 12px;
+	padding-left: 550px;
+	color: #cee3ec;
+}
+.footer {
+	float: left;
+}
+
+
