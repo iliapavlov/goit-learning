@@ -1,6 +1,5 @@
 body {
-	background: url(../img/background.jpg) no-repeat;
-	background-size: cover;
+	background: url(../img/background.jpg) no-repeat #0c739f;
 	font-family: Tahoma, Arial, sans-serif;
 	font-size: 14px;
 }
@@ -30,7 +29,7 @@ body {
 	display: block;
 }
 .contacts-and-courses p {
-	width: 123px;
+	width: 130px;
 	padding: 10px 0 0 229px;
 	font: normal 12px/17px Tahoma, sans-serif;
 	color: #41a1b9;
@@ -44,25 +43,27 @@ body {
 }
 .right-menu a {  
     color: #329ab3;
-    font-size: 12px;
+    font-size: 10px;
 }
+
+.right-menu a img {
+	margin: 0 7px;
+}
+
+.right-menu a span {
+	display: block;
+}
+
 .right-menu li {
 	display: inline-block;
-	width: 41px;
-	padding: 0 6px;
 	text-align: center;
 }
-.right-menu li:nth-child(5) {
-	width: 61px;
-	padding: 0 2px 0 0px;
-}
+
 .right-menu li:nth-child(6) {
-	width: 49px;
 	padding: 0 32px 0 3px;
 }
 
 .image {
-	/*float: left;*/
 	border-top: 1px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
 	line-height: 0;
@@ -108,6 +109,7 @@ body {
 	left: -9999px;
 	opacity: 0;
 	-webkit-transition:0.25s linear opacity;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,0.75);
 }
 .menu li:hover ul {
 	left: 23px;
@@ -126,55 +128,28 @@ body {
 
 /*CONTENT*/
 .content {
-	position: relative;
 	z-index: 1;
+	width: 1000px;
+	float: left;
+	background: url(../img/content.jpg) repeat-y;
 }
-#back3 {
-    float:left;
-    width:100%;
-    background:#edeef0;
-    overflow:hidden;
-    position:relative;
-}
-#back2 {
-    float:left;
-    width:100%;
-    background:#fff;
-    position:relative;
-    right:21%;
-    border-right: 1px solid #c7cacf;
-}
-#back1 {
-    float:left;
-    width:100%;
-    background:#edeef0;
-    position:relative;
-    right:58%;
-    border-right: 1px solid #c7cacf;
-}
+
 #col1 {
     float:left;
-    width:17%;
-    position:relative;
-    left:81%;
-    overflow: hidden;
+    width: 208px;
+    background: #edeef0;
 }
+
 #col2 {
     float:left;
-    width:54%;
-    min-height: 1px;
-    position:relative;
-    left:85%;
-    overflow: hidden;
+    width: 580px;
 }
+
 #col3 {
-    float:left;
-    width:17%;
-    position:relative;
-    left:89%;
-    overflow: hidden;
+    float:right;
+    width: 208px;
 }
-#back1 p span {
+.content p span {
 	display: block;
 	font-size: 18px;
 	text-align: center;
@@ -182,6 +157,7 @@ body {
 }
 .content p {
 	line-height: 24px;
+	padding: 0 20px 10px 14px;
 }
 /*FOOTER*/
 .footer p {
