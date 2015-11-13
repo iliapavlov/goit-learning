@@ -40,7 +40,7 @@ body {
 	display: block;
 	text-decoration: none;
 	color: #60b5ed;
-	padding: 0 16px;    
+	padding: 0 16px;   
 }
 .menu li a:hover {
 	background-color: #4eabda;
@@ -58,30 +58,33 @@ body {
 .top-bar p {
 	font-size: 1.4em;
 	line-height: 33px;
+	border: 1px solid transparent;
 }
 .enter {
 	padding: 0 11px;
-	border: 1px solid #479bd4;
-	background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
 	color: #fff;
 }
+
+.profile {
+	padding: 0 16px 0 49px;
+	position: relative;
+	color: #fff;
+}
+
 .enter a,
 .profile a {
 	color: #fff;
 }
-.enter a:hover {
-	text-decoration: none;
-}
-.profile {
-	padding: 0 16px 0 49px;
-	position: relative;
-}
-.profile a {
-	text-decoration: none;
-}
+.enter a:hover,
 .profile a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
+.enter:hover,
+.profile:hover {
+	background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+	border: 1px solid #479bd4;
+}
+
 .profile a:before {
     content: "";
     position: absolute;
@@ -142,11 +145,47 @@ body {
 
 .facebook {
 	display: block;
+	color: #fff;
 	width: 276px;
 	height: 34px;
-	background: url(../img/login_button.png) 0 0 no-repeat;
+	text-decoration: none;
 	margin-bottom: 31px;
+	background: linear-gradient(to bottom, #3d5698, #304272);
+	border-radius: 5px;
+	position: relative;
 }
+
+.facebook:before {
+	content: "";
+	position: absolute;
+	background-color: #213c71;
+	border-right: 1px solid #4c68a9;
+	width: 2px;
+	height: 34px;
+	top: 0;
+	left: 31px;
+}
+.facebook:after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 11px;
+	top: 12px;
+	left: 231px;
+	background: url(../img/tr-icon.png) 0 0 no-repeat;
+}
+.facebook span {
+	display: inline-block;
+	font-weight: bold;
+	line-height: 34px;
+}
+.facebook span:first-child {
+	padding-left: 68px;
+	background: url(../img/FB-f-Logo__blue_29.png) 0 0 no-repeat;
+	background-position: 2px 3px;
+}
+
+
 
 form input {
 	margin-bottom: 18px;
