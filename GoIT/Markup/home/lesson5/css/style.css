@@ -2,7 +2,7 @@ body {
 	background: #97bdd0 url(../img/background.jpg) no-repeat fixed center ;
 	background-size: cover;
 	font-family: "Helvetica-Neue", Arial, sans-serif;
-	font-size: 10px;
+	font-size: 14px;
 }
 @font-face {
     font-family: 'Helvetica-Neue';
@@ -20,7 +20,7 @@ body {
 	clear: both;
 }
 .top-bar {
-	background-color: #074f8f;
+	background: url(../img/top-bar.jpg) no-repeat #074f8f;
 	padding-right: 19px;
 }
 .menu,
@@ -33,7 +33,6 @@ body {
 }
 .menu li {
 	float: left; 
-	font-size: 1.4em;
 	line-height: 35px;
 }
 .menu li a {
@@ -56,13 +55,14 @@ body {
 	left: 395px;
 }
 .top-bar p {
-	font-size: 1.4em;
 	line-height: 33px;
-	border: 1px solid transparent;
 }
+
 .enter {
 	padding: 0 11px;
 	color: #fff;
+	background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
+	border: 1px solid #479bd4;
 }
 
 .profile {
@@ -79,11 +79,6 @@ body {
 .profile a:hover {
 	text-decoration: none;
 }
-.enter:hover,
-.profile:hover {
-	background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
-	border: 1px solid #479bd4;
-}
 
 .profile a:before {
     content: "";
@@ -97,16 +92,13 @@ body {
 /*CADASTRE*/
 .logging {
 	width: 559px;
-	position: absolute;
-	left: 50%;
-	margin-left: -280px;
+	margin: 200px auto 0 auto;
 	padding-bottom: 200px;
-	margin-top: 200px;
 }
 
 .logging h1 {
 	padding: 21px 0 21px 212px;
-	font-size: 2.4em;
+	font-size: 24px;
 	color: #fff;
 }
 .container-1,
@@ -114,7 +106,6 @@ body {
 	background-color: rgba(0, 0, 0, .63);
 }
 .container-2 {
-	font-size: 1.4em;
 	margin: 2px 0 0 0;
 	padding: 35px 141px 21px 141px;
 }
@@ -185,8 +176,6 @@ body {
 	background-position: 2px 3px;
 }
 
-
-
 form input {
 	margin-bottom: 18px;
 	color: #ccc;
@@ -235,12 +224,7 @@ form input[type="submit"]:hover {
 .privacy {
 	font-size: 11px;
 	color: #ccc;
-	position: relative;
-	margin-bottom: 47px;
-}
-.privacy span {
-	position: absolute;
-	width: 307px;
+	text-indent: -18px;
+	width: 289px;
 	text-align: center;
-	left: -19px;
 }
