@@ -426,8 +426,7 @@ input[type="button"] {
 /*-----BOTTOM-----*/
 
 .image-list {
-	float: left;
-	margin: 0 0 0 117px;
+	text-align: center;
 }
 
 .image-list img {
