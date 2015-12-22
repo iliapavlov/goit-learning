@@ -355,14 +355,14 @@
     }
 
     .slider_control {
-        width: 100px;
+        width: 80px;
         height: 246px;
         top: -92px;
     }
 
     .slider_control-prev {
         left: -75px;
-        background-position: 75px 106px;
+        background-position: 55px 106px;
     }
 
     .slider_control-next {
@@ -640,14 +640,14 @@
     }
 
     .slider_control {
-        width: 75px;
+        width: 70px;
         height: 246px;
         top: -92px;
     }
 
     .slider_control-prev {
         left: -35px;
-        background-position: 35px 106px;
+        background-position: 30px 106px;
     }
 
     .slider_control-next {
