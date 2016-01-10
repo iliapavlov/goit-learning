@@ -1,0 +1,27 @@
+
+.time-line span {
+	background: #e73827;
+	color: #fff;
+}
+
+.vertical-align {
+	margin: 200px 0 0;
+	padding-bottom: 200px;
+
+}
+
+.clock {
+	background: #bce0ee;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#start,
+#stop {
+	width: 80px;
+}
+
