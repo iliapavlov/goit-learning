@@ -1,0 +1,88 @@
+body {
+	font: normal 14px/14px Verdana, Arial, sans-serif;
+	margin: 50px auto;
+	width: 570px;
+}
+
+p {
+	padding: 5px 0;
+}
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.content {
+	padding: 5px;
+	width: 480px;
+	background-color: #49EEFF;
+	border: 2px solid #FFB07E;
+	border-radius: 10px;
+}
+
+.nav {
+	padding: 5px 5px 0;
+}
+
+.tbn {
+	float: left;
+	margin: 0 4px;
+	border: 1px solid #B26634;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom: none;
+	background-color: #CCBB50;
+}
+
+.button {
+	float: left;
+	padding: 15px 10px;
+	color: #97FBFF;
+	text-decoration: none;
+	font-family: Tahoma;
+	font-weight: bold;
+}
+
+.tbn:hover {
+	background-color: #B2A54F;
+}
+
+.active,
+.active:hover {
+	background-color: #21A5B2;
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+
+.tabs-content {
+	display: none;
+	min-height: 400px;
+	padding: 10px 15px;
+	border: 1px solid #B26634;
+	background-color: #21A5B2;
+}
+
+/*---FORM---*/
+.wrap {
+	margin: 4px 0 20px;
+	position: relative;
+	font-size: 11px;
+}
+
+.wrap label {
+	display: inline-block;
+	width: 54px;
+	font-size: 10px;
+}
+
+.tips {
+	position: absolute;
+	top: -3px;
+	left: 213px;
+	padding: 4px 8px;
+	color: #97FBFF;
+	border: 2px solid #ffa57e;
+	border-radius: 5px;
+}
