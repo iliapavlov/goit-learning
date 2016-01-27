@@ -1,0 +1,262 @@
+/*-----------general----------*/
+
+body {
+	font-family: Verdana;
+	font-size: 12px;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/*------------NAVIGATION-------------*/
+
+.menu-item {
+	float: left;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #CC6756;
+	border: 1px solid #CC6756;
+}
+
+nav li li.menu-item {
+	width: 130px;
+	height: 30px;
+	padding: 10px;
+	line-height: 30px;
+	text-align: left;
+}
+
+nav li li.menu-item a {
+	border-bottom: 1px solid #898E99;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+.sub-menu {
+	display: none;
+	position: absolute;
+	left: -1px;
+	top: 51px;
+}
+
+nav li li .sub-menu,
+nav li li li .sub-menu {
+	left: 151px;
+	top: -1px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+
+/*---------------layout----------------*/
+.dropdown-menu,
+.slider,
+.boxes {
+	padding: 20px 0;
+	width: 100%;
+	background-color: rgba(56,19,110, .8);
+	position: relative;
+}
+.dropdown-menu {
+	z-index: 100;
+	background-color: #400;
+}
+
+.dropdown-menu ul.clearfix {
+	float: right;
+}
+
+.slider {
+	z-index: 99;
+}
+
+.boxes {
+	background-color: rgba(12,190,30, .85);
+}
+
+.jcarousel-wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: 1200px;
+}
+
+/*---------jcarousel-------------*/
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+	margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+}
+
+/*
+jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+	width: 1200px;
+	height: 480px;
+    float: left;
+}
+
+.jcarousel li img {
+	max-width: 1200px;
+	max-height: 480px;
+}
+
+/*-----inner-----*/
+.textblock_head {
+	font-size: 28px;
+	margin: 140px 0 30px 90px;
+	color: #edbfff;
+	text-transform: uppercase;
+}
+
+.textblock_content {
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0 0 0 150px;
+	color: #fff;
+	letter-spacing: -.2px;
+	max-width: 515px;
+	max-height: 144px;
+}
+
+.jcarousel-prev,
+.jcarousel-next {
+	position: absolute;
+	width: 100px;
+	height: 480px;
+	display: block;
+	opacity: .2;
+	background-color: rgba(250, 250, 250, 0);
+	transition: all .2s;
+}
+
+    .jcarousel-prev:hover,
+	.jcarousel-next:hover {
+		background-color: rgba(250, 250, 250, .15);
+		opacity: 1;
+	}
+
+	.jcarousel-prev {
+		background: url(../img/icon-aleft.png) 10px 223px no-repeat;
+		top: 0;
+		left: 0;
+	}
+
+	.jcarousel-next {
+		background: url(../img/icon-aright.png) 68px 223px no-repeat;
+		top: 0;
+		left: 1100px;
+	}
+
+/*------------------BOXES-------------------*/
+.right-box {
+	float: right;
+}
+
+.left-box {
+	float: left;
+}
+
+.custom_check-withjquery,
+.custom_check-withcss {
+	width: 320px;
+	float: left;
+}
+
+.custom_check-withjquery li,
+.custom_check-withcss li {
+	margin: 0 0 12px;
+}
+
+/*-----------------check box with css-------*/
+.custom_ch {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.custom_ch_label {
+    cursor: pointer;
+}
+
+.custom_ch_label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-icon.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+.custom_ch:checked + label:after {
+    background-position: 0 -17px;
+}
+
+.custom_ch_label:hover:after {
+    background-position: 0 -34px;
+}
+
+.custom_ch:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+
+
+/*-----------------select box----------------*/
+.customSelect { 
+    font:14px "Comic Sans MS" serif;
+    background:#fff url(http://i48.tinypic.com/2u7rpec.png) right center no-repeat;
+    border:3px solid #ddd;
+    color:#555;
+    padding:7px 9px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px 10px;
+    width:280px;
+}
+.customSelect.customSelectHover {
+    border-color:#c7c7c7;
+    background-color:#f5f5f5;
+}
+.customSelect.customSelectFocus {
+    border-color:Orange;
+}
+.customSelect.customSelectOpen {
+    border-color:OliveDrab;
+}
+.customSelectInner {
+}
+
+

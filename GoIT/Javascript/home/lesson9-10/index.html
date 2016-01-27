@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lesson9-10</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- color -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+
+    <!-- jcarousel -->
+    <script src="js/jquery.jcarousel.js"></script>
+
+	<!-- Realized check box: https://github.com/fronteed/iCheck/ -->
+	<link href="css/blue.css" rel="stylesheet">
+    <script src='js/jquery.icheck.js'></script>
+    <!-- Realized select box: http://adam.co/lab/jquery/customselect/ -->
+    <script src='js/jquery.customSelect.js'></script>
+
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <nav class="dropdown-menu">
+    	<div class="wrapper clearfix">
+	    	<ul class="clearfix">
+	    		<li class="menu-item"><a href="#">Home</a></li>
+	    		<li class="menu-item"><a href="#">About Us</a></li>
+	    		<li class="menu-item dropdown">
+
+		    		<a href="#">Services &#9660;</a>
+					<ul class="sub-menu">
+						<li class="menu-item"><a href="#">Service 1</a></li>
+						<li class="menu-item"><a href="#">Service 2</a></li>
+						<li class="menu-item dropdown">
+
+						    <a href="#">Service 3 &#10145;</a>
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Service variant 1</a></li>
+								<li class="menu-item"><a href="#">Service variant 2</a></li>
+								<li class="menu-item dropdown">
+
+									<a href="#">Service variant 3 &#10145;</a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="#">Item 1</a></li>
+										<li class="menu-item"><a href="#">Item 2</a></li>
+										<li class="menu-item"><a href="#">Item 3</a></li>
+										<li class="menu-item"><a href="#">Item 4</a></li>
+									</ul>
+
+								</li>
+								<li class="menu-item"><a href="#">Service variant 4</a></li>
+							</ul>
+
+						</li>
+						<li class="menu-item"><a href="#">Service 4</a></li>
+					</ul>
+
+	    		</li>
+	    		<li class="menu-item"><a href="#">Faqs</a></li>
+	    		<li class="menu-item"><a href="#">Contact us</a></li>
+	    	</ul>
+    	</div><!-- wrapper -->
+    </nav>
+
+    <section class="slider">
+		<div class="jcarousel-wrapper">
+		    <div class="jcarousel">
+			    <ul>
+			        <li>
+
+		    	        <h2 class="textblock_head">
+		    	        	It will make all of your dreams come true
+		    	        </h2>
+		    	        <p class="textblock_content">
+		    	        	Semper sollicitudin gravida eget, ves&shy;tibulum sit amet sapien. Nunc dignis&shy;sim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu rt felis aliqua a tempus lectus lobortis.
+		    	        </p>
+
+			        </li>
+			        <li><img src="img/img-1.jpg" alt="img-1.jpg"></li>
+			        <li><img src="img/img-2.jpg" alt="img-2.jpg"></li>
+			        <li><img src="img/img-3.jpg" alt="img-3.jpg"></li>
+			    </ul>
+			</div>
+	    	<a href="#" class="jcarousel-prev"></a>
+	    	<a href="#" class="jcarousel-next"></a>
+        </div>
+ 	</section><!-- slider -->
+
+    <section class="boxes">
+		<div class="wrapper clearfix">
+		    <form action="#">
+
+		        <div class="left-box">
+			        <ul class="custom_check-withjquery">
+			        	<li>
+			        		<label for="ch1">
+					        	<input type="checkbox" id="ch1" tabindex="1" /> 
+					        	Теория струн
+				        	</label>
+			        	</li>
+			        	<li>
+							<label for="ch2">
+								<input type="checkbox" id="ch2" checked="checked" tabindex="2" />
+								Теория относительности
+							</label>
+			        	</li>
+			        	<li>
+			        		<label for="ch3">
+								<input type="checkbox" id="ch3" checked="checked" disabled="disabled" />
+								Классическая механика
+							</label>
+			        	</li>
+			        </ul>
+
+			        <ul class="custom_check-withcss">
+			        	<li>
+				        	<input type="checkbox" id="check1" class="custom_ch" tabindex="1" /> 
+			        		<label for="check1" class="custom_ch_label">Сделать зарядку</label>
+			        	</li>
+			        	<li>
+							<input type="checkbox" id="check2" class="custom_ch" checked="checked" tabindex="2" />
+							<label for="check2" class="custom_ch_label">Выпить стакан воды</label>
+			        	</li>
+			        </ul>
+		        </div><!--left-box-->
+
+		        <div class="right-box">
+    				<select class="customSelect">
+    					<option value="--">Please select your favorite movie</option>
+    					<option value="01">Interstellar</option>
+    					<option value="02">Love Actually</option>
+    					<option value="03">Moonrise Kingdom</option>
+    					<option value="04">Die Hard</option>
+    					<option value="05">Groundhog Day</option>
+    					<option value="06">The Adjustment Bureau</option>
+    				</select>
+    			</div>
+
+    		</form>
+		</div><!-- wrapper -->
+	</section><!-- check-box -->
+		
+
+</body>
+</html>
