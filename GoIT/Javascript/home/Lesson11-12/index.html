@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lesson11-12</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<script src="js/jquery.simpleCarousel.js" ></script>
+
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	<section id="first_section" class="clearfix">
+		<div class="carousel-arrow-left"><span>Влево</span></div>
+		<div class="carousel-hider">
+			<ul class="carousel-list">
+			    <li class="carousel-element"><img src="img/image1.jpg"><p>Фонарь 1</p></li>
+			    <li class="carousel-element"><img src="img/image2.jpg"><p>Мост 2</p></li>
+			    <li class="carousel-element"><img src="img/image3.jpg"><p>Мост 3</p></li>
+			    <li class="carousel-element"><img src="img/image4.jpg"><p>Корабль 4</p></li>
+			    <li class="carousel-element"><img src="img/image1.jpg"><p>Фонарь 5</p></li>
+			    <li class="carousel-element"><img src="img/image2.jpg"><p>Мост 6</p></li>
+			    <li class="carousel-element"><img src="img/image3.jpg"><p>Мост 7</p></li>
+			    <li class="carousel-element"><img src="img/image4.jpg"><p>Корабль 8</p></li>
+			</ul>
+		</div>
+		<div class="carousel-arrow-right"><span>Вправо</span></div>
+	</section>
+
+	<section id="second_section" class="clearfix">
+	    <script type="text/template" id="profile">
+		    <h2> <%= name %> </h2>
+		    <div class="left_col">
+			    <img class="small_pic" src= <%= userpicUrl %> >
+			    <p> <%= job %> </p>
+			    <p> <%= tel %> </p>
+		    </div>
+		    <div class="right_col">
+		        <ol>
+			        <% for (var i in features) { %>
+				    <li> <p> <%= features[i] %> </p> </li>
+				    <% }; %>
+				</ol>
+		    </div>
+	    </script>	
+	    
+	</section>
+</body>
+</html>
