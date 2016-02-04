@@ -13,12 +13,7 @@ $(function(){
         userpicUrl: '"img/user1.jpg"',
         job: 'Фронтендер',
         tel: '+380987654321',
-    };
-
-    data.features = {
-        0: 'Учит JS', 
-        1: 'Слушается учителей', 
-        2: 'Сдал урок по шаблонизации'
+        features: ['Учит JS', 'Слушается учителей', 'Сдал урок по шаблонизации']
     };
 
     var content = tmpl(profile, data);
