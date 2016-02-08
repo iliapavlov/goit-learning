@@ -109,12 +109,9 @@ $(function(){
     	$('#myModal').modal();
     	$('#myModal').on('hidden.bs.modal', function (e) { 
 	    	$('input[type="checkbox"]').prop( "checked", false ); // clear marks ---
-<<<<<<< HEAD
 	    	resultVar.myRes = 0;
 	    	resultVar.total = 0;
 	    	$('#myModal').remove();
-=======
->>>>>>> e445fd58ae564d68523ad83e0bc8a705ebc84d16
 	    });
 	}
 
