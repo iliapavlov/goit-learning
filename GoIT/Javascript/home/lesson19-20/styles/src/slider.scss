@@ -1,0 +1,87 @@
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+
+    ul {
+	    width: 20000em;
+	    position: relative;
+
+	    li {
+	    	width: 1160px;
+	    	height: 470px;
+	        float: left;
+	    }
+    }
+}
+
+.jcarousel-pagination {
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 35px);
+
+    a {
+        text-decoration: none;
+        text-align: center;
+        line-height: 20px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        margin-left: 5px;
+
+        &:first-child {
+	        margin-left: 0;
+        }
+
+        &:hover {
+	        background-color: #245778;
+        }
+
+        &.active {
+	        background: url(../img/active-item.png) 3px 3px no-repeat #fff;
+	        
+            &:hover {
+		        background-color: #245778;
+            }
+        }
+    }
+}
+
+.slogan {
+    position: absolute;
+    left: 35px;
+    bottom: 60px;
+    height: 195px;
+    width: 308px;
+}
+
+.slogan__bg {
+    display: inline-block;
+    background-color: rgba(26,26,26, .9);
+    width: 215px;
+    height: 196px;
+}
+
+.slogan__bg-second {
+    @extend .slogan__bg;
+    width: 93px;
+    height: 88px;
+    margin-left: -4px;
+}
+
+.slogan__text {
+    position: absolute;
+    width: 245px;
+    font: normal 54px/52px Arial, Georgia sans-serif;
+    color: #f4b60d;
+    text-transform: capitalize;
+    left: 27px;
+    top: 28px;
+}
+
+.slogan__text-white {
+    @extend .slogan__text;
+    color: #fff;
+    top: 79px;
+}

@@ -1,0 +1,72 @@
+@import 'src/variables';
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.wrapper {
+	width: 1160px;
+	margin: 20px auto;
+	position: relative;
+}
+
+/*=======SERVICES=========*/
+.services {
+	background-color: #2a2d32;
+	padding: 45px 0 65px;
+}
+.service {
+	display: inline-block;
+	position: relative;
+	margin: 0 35px 0 0;
+
+	&:hover .cover {
+		display: block;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.service__box {
+	width: 260px;
+	height: 260px;
+	overflow: hidden;
+	text-align: center;
+	img {
+		max-height: 260px;
+		
+	}
+}
+
+.cover {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 260px;
+	height: 260px;
+	background-color: rgba(46, 140, 227, .9);
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		background-color: #fff;
+	}
+	&:before {
+		width: 35px;
+		height: 3px;
+		top: 128px;
+		left: 112px;
+	}
+	&:after {
+		width: 3px;
+		height: 35px;
+		top: 112px;
+		left: 128px;
+	}
+}

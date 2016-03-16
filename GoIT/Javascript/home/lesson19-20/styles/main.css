@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.jcarousel {
+  position: relative;
+  overflow: hidden; }
+  .jcarousel ul {
+    width: 20000em;
+    position: relative; }
+    .jcarousel ul li {
+      width: 1160px;
+      height: 470px;
+      float: left; }
+
+.jcarousel-pagination {
+  background-color: transparent;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 35px); }
+  .jcarousel-pagination a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    margin-left: 5px; }
+    .jcarousel-pagination a:first-child {
+      margin-left: 0; }
+    .jcarousel-pagination a:hover {
+      background-color: #245778; }
+    .jcarousel-pagination a.active {
+      background: url(../img/active-item.png) 3px 3px no-repeat #fff; }
+      .jcarousel-pagination a.active:hover {
+        background-color: #245778; }
+
+.slogan {
+  position: absolute;
+  left: 35px;
+  bottom: 60px;
+  height: 195px;
+  width: 308px; }
+
+.slogan__bg, .slogan__bg-second {
+  display: inline-block;
+  background-color: rgba(26, 26, 26, 0.9);
+  width: 215px;
+  height: 196px; }
+
+.slogan__bg-second {
+  width: 93px;
+  height: 88px;
+  margin-left: -4px; }
+
+.slogan__text, .slogan__text-white {
+  position: absolute;
+  width: 245px;
+  font: normal 54px/52px Arial, Georgia sans-serif;
+  color: #f4b60d;
+  text-transform: capitalize;
+  left: 27px;
+  top: 28px; }
+
+.slogan__text-white {
+  color: #fff;
+  top: 79px; }
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.wrapper {
+  width: 1160px;
+  margin: 20px auto;
+  position: relative; }
+
+/*=======SERVICES=========*/
+.services {
+  background-color: #2a2d32;
+  padding: 45px 0 65px; }
+
+.service {
+  display: inline-block;
+  position: relative;
+  margin: 0 35px 0 0; }
+  .service:hover .cover {
+    display: block; }
+  .service:last-child {
+    margin-right: 0; }
+
+.service__box {
+  width: 260px;
+  height: 260px;
+  overflow: hidden;
+  text-align: center; }
+  .service__box img {
+    max-height: 260px; }
+
+.cover {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 260px;
+  background-color: rgba(46, 140, 227, 0.9); }
+  .cover:before, .cover:after {
+    content: "";
+    position: absolute;
+    background-color: #fff; }
+  .cover:before {
+    width: 35px;
+    height: 3px;
+    top: 128px;
+    left: 112px; }
+  .cover:after {
+    width: 3px;
+    height: 35px;
+    top: 112px;
+    left: 128px; }
+
+/*# sourceMappingURL=main.css.map */
