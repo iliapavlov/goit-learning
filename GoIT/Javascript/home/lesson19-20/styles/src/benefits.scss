@@ -1,0 +1,81 @@
+/*========BENEFITS========*/
+
+.benefits {
+	padding: 70px 0 85px;
+}
+
+.textblock {
+	width: 245px;
+	display: inline-block;
+	padding: 50px 0 0 120px;
+	margin: 0 28px 0 0;
+	position: relative;
+
+	.textblock__head {
+		margin: 0 0 25px;
+		font-size: 20px;
+		line-height: 20px;
+		color: $blackTone;
+	}
+
+	.textblock__content {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	a {
+		font-size: 13px;
+		color: $blackTone;
+
+		&:hover {
+	    	color: $blueColor;
+	    }
+	}
+
+	&:after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 120px;
+		width: 32px;
+		height: 32px;
+		background: url(../img/settings-icon.png);
+	}
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 89px;
+		height: 65px;
+		background: url(../img/digits-icon.png);
+	}
+}
+
+.textblock--tech,
+.textblock--support {
+	@extend .textblock;
+}
+
+.textblock--support {
+	margin: 0;
+}
+
+.textblock--tech:after {
+	background-position: -33px 0;
+}
+
+.textblock--support:after {
+	background-position: -66px 0;
+}
+
+.textblock--tech:before {
+	background-position: -90px 0;
+}
+
+.textblock--support:before {
+	background-position: -180px 0;
+}
+
+

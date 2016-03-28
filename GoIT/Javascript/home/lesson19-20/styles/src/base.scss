@@ -1,0 +1,50 @@
+/* tools--------------------------*/
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.wrapper {
+	width: 1160px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* base----------------------------------*/
+
+html {
+	height: 100%;
+	background-color: #fff;
+}
+
+body {
+	height: 100%;
+	font: 14px/14px Arial, sans-serif;
+	color: #9a9a9a;
+}
+
+a {
+	text-decoration: none;
+	font: 16px/16px 'Ubuntu', Arial, sans-serif;
+	font-weight: 500;
+	color: $greyDark;
+
+    &:hover {
+    	color: $blueColor;
+    }
+}
+
+.social_share__image a {
+	background: url(../img/sprite.png) no-repeat 0 0;
+	text-indent: -9999px;
+}
+
+h2,
+h4,
+h5,
+h6 {
+	font: 24px/24px 'Ubuntu', Arial, sans-serif;
+	font-weight: 500;
+	color: $greyDark;
+}

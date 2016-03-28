@@ -3,11 +3,11 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 	  concat: {
 	    style: {
-	      src: ['styles/src/*.scss'],
-	      dest: 'styles/main.scss',
+	      src: ['styles/src/index.scss'],
+	      dest: 'styles/src/main.scss',
 	    },
 	    js: {
-	      src: ['js/src/jquery.jcarousel.js', 'js/src/script.js'],
+	      src: ['js/src/jquery.jcarousel.js', 'js/src/woco.accordion.js', 'js/src/script.js'],
 	      dest: 'js/main.js',
 	    },
 	  },
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 	    dist: {
 	      files: [{
 	        expand: true,
-	        cwd: 'styles',
+	        cwd: 'styles/src',
 	        src: ['main.scss'],
 	        dest: 'styles',
 	        ext: '.css'

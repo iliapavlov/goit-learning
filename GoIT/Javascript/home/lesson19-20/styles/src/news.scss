@@ -1,0 +1,96 @@
+/*=============NEWS=============*/
+
+.news {
+	background-color: #f7f7f7;
+	padding: 65px 0 80px;
+
+	h4 {
+		margin: 0 0 48px;
+	}
+
+	article {
+		float: left;
+
+		.teaser {
+			position: relative;
+
+			div {
+				float: left;
+				margin: 0 0 30px;
+			}
+
+			.teaser__box {
+				width: 150px;
+				height: 150px;
+				overflow: hidden;
+				text-align: center;
+
+				img {
+					max-height: 250px;
+				}
+			}
+
+			.textblock--news {
+				@extend .textblock;
+				width: 408px;
+				padding: 7px 0 0 33px;
+
+				&:before, 
+				&:after, {
+			        content: '';
+			        content: none;
+			    }
+
+				a {
+					font-size: 16px;
+					color: $greyDark;
+				}
+			}
+
+			.params {
+				margin: 9px 0 20px;
+
+				a {
+					color: $blueColor;
+				}
+
+				.author {
+					padding: 0 9px 0 3px;
+				}
+
+			}
+
+			.date {
+				position: absolute;
+				width: 34px;
+				height: 67px;
+				left: -15px;
+				top: 12px;
+				background-color: $blueColor;
+				padding: 13px 0 0 6px;
+				font-size: 15px;
+				color: #fff;
+
+				.date__number {
+					position: absolute;
+					width: 33px;
+					height: 27px;
+					left: 0;
+					top: 40px;
+					background-color: $yellowColor;
+					padding: 13px 0 0 7px;
+					font-size: 18px;
+					color: $blackTone;
+				}
+			}
+		}
+	}
+
+	aside {
+		float: right;
+		width: 529px;
+		max-height: 445px;
+		overflow: hidden;
+	}
+
+}

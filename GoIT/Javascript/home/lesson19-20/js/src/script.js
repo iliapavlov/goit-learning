@@ -23,4 +23,8 @@ $(function(){
         target: '+=1',
         autostart: true
     });
+
+    $('#accordion').accordion({
+
+    });
 });
