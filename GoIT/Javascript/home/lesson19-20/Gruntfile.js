@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 	      dest: 'styles/src/main.scss',
 	    },
 	    js: {
-	      src: ['js/src/jquery.jcarousel.js', 'js/src/woco.accordion.js', 'js/src/script.js'],
+	      src: ['js/src/jquery.jcarousel.js', 'js/src/woco.accordion.js', 'js/src/plug-ini.js', 'js/src/script.js'],
 	      dest: 'js/main.js',
 	    },
 	  },
@@ -26,6 +26,10 @@ module.exports = function(grunt) {
 	  	sass: {
 	  		files: ['styles/src/*.scss'],
 	  		tasks: ['concat:style', 'sass']
+	  	},
+	  	myjs: {
+	  		files: ['js/src/*.js'],
+	  		tasks: ['concat:js']
 	  	}
 	  }
 	});
