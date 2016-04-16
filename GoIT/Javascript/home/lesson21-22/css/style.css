@@ -1,0 +1,14 @@
+.fine-line {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.container {
+	border: 1px solid #efefef;
+}
+
+.group-questions {
+	margin-bottom: 3px;
+	border-top: 1px dashed #efefef;
+	border-bottom: 1px dashed #efefef;
+}
