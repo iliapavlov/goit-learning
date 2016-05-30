@@ -1,0 +1,59 @@
+header {
+	background: url(../img/header_bg.jpg) top center no-repeat;
+	padding: 175px 0 127px;
+	text-align: center;
+
+	h1 {
+		margin: 0 0 30px;
+
+		a {
+			font-size: 20px;
+			color: #fff;
+		}
+	}
+}
+/* 
+#auth is a nav-block with two buttons for authorization/logining
+*/
+#auth {
+	position: absolute;
+	top: -150px;
+	left: 68px;
+}
+
+.btn {
+	display: inline-block;
+	margin: 8px 0 0 0;
+	padding: 13px 48px;
+	color: #fff;
+	background-color: $primary-color;
+	border: 2px solid $primary-color;
+	@include border-radius(22px);
+}
+
+.btn--auth {
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 10px 15px;
+	background-color: transparent;
+	border-color: transparent;
+	@include border-radius(19px);
+}
+
+.btn--sign-up {
+	border-color: #fff;
+}
+
+.text {
+	font: 700 30px/36px Montserrat, Arial;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.text__subtext {
+	display: block;
+	margin: 10px 0;
+	padding: 0 50px;
+	font: 300 18px/21px Roboto, Arial;
+	text-transform: none;
+}

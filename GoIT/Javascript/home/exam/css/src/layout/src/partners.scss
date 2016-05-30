@@ -1,0 +1,44 @@
+.partner {
+	position: relative;
+	margin: 20px auto 30px;
+	max-width: 220px;
+	text-align: center;
+
+	&:hover .partner__id {
+		color: $primary-color;
+
+	}
+}
+
+.partner__cat {
+	position: absolute;
+	top: 90px;
+	right: 40px;
+	@include border-radius(20px);
+}
+
+.partner__ava {
+	@include border-radius(63px);
+}
+
+.partner__description {
+	padding: 20px 0 0;
+}
+
+.partner__id {
+	display: block;
+	margin: 0 0 20px;
+	@include transition(500ms, ease-out, 0s);
+}
+
+.group-center {
+	text-align: center;
+}
+
+.btn--partners {
+	margin: 0;
+	padding: 13px 72px;
+	background-color: transparent;
+	color: $primary-color;
+	border-color: $primary-color;
+}

@@ -1,0 +1,51 @@
+.grid {
+	margin: 0 0 38px;
+}
+
+.grid-item {
+	width: 300px;
+	height: 120px;
+	float: left;
+	margin: 0 0 10px 10px;
+	text-align: center;
+	line-height: 125px;
+	@include border-radius(3px);
+	&:last-child {
+		margin: 0 0 0 10px;
+	}
+
+	.topic {
+		font-size: 22px;
+		line-height: 22px;
+		color: #fff;
+		display: inline-block;
+	}
+}
+
+.grid-item--width2 {
+	width: 300px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+	.grid-item {
+		width: 235px;
+		height: 308px;
+		line-height: 320px;
+	}
+
+	.grid-item--width2 {
+		width: 490px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.grid-item {
+		width: 300px;
+		height: 309px;
+		line-height: 320px;
+	}
+
+	.grid-item--width2 {
+		width: 619px;
+	}
+}

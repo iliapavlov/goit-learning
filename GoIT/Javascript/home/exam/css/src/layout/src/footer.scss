@@ -1,0 +1,46 @@
+footer {
+	padding: 20px 0 17px;
+	text-align: center;
+}
+
+.logo {
+	margin: 0 0 18px;
+
+	a {
+		font-size: 16px;
+		color: $primary-color;
+	}
+}
+
+.links {
+	margin: 0 0 19px;
+
+	ul {
+		margin: 10px 0 0;
+	}
+}
+
+.links__link {
+	display: inline-block;
+	margin: 0 14px 0 0;
+
+	&:last-child {
+		margin: 0;
+	}
+
+	a {
+		font: 300 14px/14px 'Roboto', Arial, sans-serif;
+		color: #8f8f8f;
+	}
+}
+
+.designed {
+	font: 700 10px/10px 'Montserrat', Arial, sans-serif;
+	color: #ccc;
+	text-transform: uppercase;
+
+	span {
+		display: block;
+		margin: 10px 0 0;
+	}
+}

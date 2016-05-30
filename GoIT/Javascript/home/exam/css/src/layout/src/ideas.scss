@@ -1,0 +1,26 @@
+.contents--ideas {
+	padding: 43px 0 40px;
+	border-bottom: 4px solid $primary-color;
+}
+
+form {
+	label {
+		font-size: 18px;
+	}
+}
+
+#request {
+	width: 252px;
+	margin: 20px 0 10px;
+	padding: 14px;
+	border: 1px solid #ccc;
+	font: 300 14px/14px Roboto, Arial;
+	@include border-radius(3px);
+}
+
+.btn--form {
+	font: 700 14px/14px Montserrat, Arial, sans-serif;
+	margin: 0;
+	padding: 14px 83px;
+	@include border-radius(24px);
+}
