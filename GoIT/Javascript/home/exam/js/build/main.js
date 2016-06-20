@@ -3927,20 +3927,19 @@ $(function(){
 		wrap: 'last'
 	});
 
-	$('.jcarousel-pagination')
-	
-	.on('jcarouselpagination:active', 'a', function() {
-	    $(this).addClass('active');
-	})
-	.on('jcarouselpagination:inactive', 'a', function() {
-	    $(this).removeClass('active');
-	})
+	$('.jcarousel-prev').jcarouselControl({
+		target: '-=1'
+	});
 
-    $('.jcarousel').jcarouselAutoscroll({
-        interval: 12000,
-        target: '+=1',
-        autostart: true
-    });
+	$('.jcarousel-next').jcarouselControl({
+		target: '+=1'
+	});
+
+	$('.jcarousel').jcarouselAutoscroll({
+		interval: 12000,
+		target: '+=1',
+		autostart: true
+	});
 
 	$('.grid').masonry({
 	  itemSelector: '.grid-item',
@@ -3953,7 +3952,7 @@ $(function(){
 	function MasonryCallback(data) {
 		var templateResults = $('#pixplorer').html();
 		var content = tmpl(templateResults, {data: data.hits});
-		$('#grid').remove();
+		$('.grid').remove();
 		$('#gridWrapper').append(content);
 		$('.grid-item:nth-child(5)').addClass('grid-item--width2');
 		$('.grid-item:nth-child(6)').addClass('grid-item--width2');

@@ -13,15 +13,17 @@
 </head>
 <body>
     <header>
-    	<div class="wrp">
-    		<h1><a href="#">URLAUBSGLÜCK</a></h1>
-	    	<nav id="auth" class="clearfix">
-	    		<a class="btn btn--auth" href="#">Log in</a>
-	    		<a class="btn btn--auth btn--sign-up" href="#">Sign up</a>
-	    	</nav>
+    	<div class='wrapper'>
+    		<nav class="clearfix">
+    			<h1><a href="#">URLAUBSGLÜCK</a></h1>
+		    	<div id="auth" class="clearfix">
+		    		<a class="btn btn--auth" href="#">Log in</a>
+		    		<a class="btn btn--auth btn--sign-up" href="#">Sign up</a>
+		    	</div>
+    		</nav>
 	    	<h2 class="text">
 	    		Share your holiday dreams
-	    		<span class="text__subtext">And find the prfect partner to fullfill it</span>
+	    		<span class="text__subtext">And find the perfect partner to fullfill it</span>
 	    	</h2>
     		<a class="btn" href="#">Find your holiday partner</a>
 	    </div>
@@ -29,7 +31,7 @@
 
 <!-- =======================how it works======================= -->
     <div class="contents">
-    	<div class="wrp">
+    	<div class='wrapper clearfix'>
     		<h3>How Urlaubsgluck works?</h3>
     		<div class="jcarousel">
     			<ul>
@@ -84,9 +86,9 @@
 
 <!-- =======================partner=======================s -->
     <div class="contents">
-    	<div class="wrp">
+    	<div class='wrapper'>
     		<h3>Meet a partner for your best holiday</h3>
-    		<ul>
+    		<ul class='clearfix'>
     			<li>
 	    			<figure class="partner">
 	    				<img src="img/img_partner-1.jpg" alt="" class="partner__ava">
@@ -97,7 +99,7 @@
 	    			</figure>
 	    		</li>
 	    		<li>
-	    			<figure class="partner">
+	    			<figure class='partner align-right'>
 	    				<img src="img/img_partner-2.jpg" alt="" class="partner__ava">
 	    				<img src="img/img_category-2.jpg" alt="" class="partner__cat">
 	    				<figcaption class="partner__description">
@@ -106,7 +108,7 @@
 	    			</figure>
 	    		</li>
 	    		<li>
-	    			<figure class="partner">
+	    			<figure class='partner align-bottom'>
 	    				<img src="img/img_partner-3.jpg" alt="" class="partner__ava">
 	    				<img src="img/img_category-3.jpg" alt="" class="partner__cat">
 	    				<figcaption class="partner__description">
@@ -115,7 +117,7 @@
 	    			</figure>
 	    		</li>
 	    		<li>
-	    			<figure class="partner">
+	    			<figure class='partner align-right'>
 	    				<img src="img/img_partner-4.jpg" alt="" class="partner__ava">
 	    				<img src="img/img_category-4.jpg" alt="" class="partner__cat">
 	    				<figcaption class="partner__description">
@@ -132,9 +134,9 @@
 
 <!-- =======================ideas============================= -->
 		<div class="contents contents--ideas">
-			<div class="wrp">
+			<div class='wrapper'>
 				<h3>Discover holiday activity ideas</h3>
-				<div id="gridWrapper">
+				<div id="gridWrapper" class="clearfix">
 					<!-- template here -->
 				</div>
 
@@ -149,7 +151,7 @@
 
 <!-- =======================FOOTER============================= -->
 		<footer>
-			<div class="wrp">
+			<div class='wrapper'>
 				<p class="logo"><a href="#">URLAUBSGLÜCK</a></p>
 				<div class="links">
 					<p class="links__head">Company</p>
@@ -171,7 +173,7 @@
 
 
 	<script type="text/template" id="pixplorer">
-					<div class="grid" id="grid">
+					<div class="grid">
             <% for (var i = 0; i <= 6; i++) { %>
                   <div class="grid-item" style="background: url( <%= data[i].webformatURL %> ) no-repeat center center">
 	                	<p class="topic"> <%= data[i].user %></p>

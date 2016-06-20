@@ -1,28 +1,29 @@
 footer {
-	padding: 20px 0 17px;
+	padding: 19px 0 16px;
 	text-align: center;
 }
 
 .logo {
-	margin: 0 0 18px;
+	margin: 0 0 15px;
 
 	a {
 		font-size: 16px;
 		color: $primary-color;
+		letter-spacing: .05em;
 	}
 }
 
 .links {
-	margin: 0 0 19px;
+	margin: 0 0 17px;
+}
 
-	ul {
-		margin: 10px 0 0;
-	}
+.links__head {
+	margin: 0 0 5px;
 }
 
 .links__link {
 	display: inline-block;
-	margin: 0 14px 0 0;
+	margin: 0 10px 0 0;
 
 	&:last-child {
 		margin: 0;
@@ -38,9 +39,81 @@ footer {
 	font: 700 10px/10px 'Montserrat', Arial, sans-serif;
 	color: #ccc;
 	text-transform: uppercase;
+	letter-spacing: .065em;
 
 	span {
 		display: block;
-		margin: 10px 0 0;
+		margin: 8px 0 0;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+
+	footer {
+		padding: 37px 0 39px;
+		text-align: initial;
+	}
+
+	.logo {
+		float: left;
+		margin: 0 84px 0 39px;
+	}
+
+	.links {
+		float: left;
+		margin: 0 105px 0 0;
+	}
+
+	.links__head {
+		margin: 0 0 16px;
+	}
+
+	.links__link {
+		display: block;
+		margin: 0 0 10px;
+	}
+
+	.designed {
+		float: right;
+		margin: 0 40px 0 0;
+
+		span {
+			text-indent: -32px;
+		}
+	}
+}
+
+@media screen and (min-width: 960px) {
+	footer {
+		padding: 38px 0 39px;
+		text-align: initial;
+	}
+
+	.logo {
+		float: left;
+		margin: 0 98px 0 9px;
+	}
+
+	.links {
+		float: left;
+		margin: 0 93px 0 0;
+	}
+
+	.links__head {
+		margin: 0 0 16px;
+	}
+
+	.links__link {
+		display: block;
+		margin: 0 0 10px;
+	}
+
+	.designed {
+		float: right;
+		margin: 0 10px 0 0;
+
+		span {
+			text-indent: -32px;
+		}
 	}
 }

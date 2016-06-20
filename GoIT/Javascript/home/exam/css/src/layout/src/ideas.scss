@@ -1,5 +1,5 @@
 .contents--ideas {
-	padding: 43px 0 40px;
+	padding: 35px 0 40px;
 	border-bottom: 4px solid $primary-color;
 }
 
@@ -11,8 +11,8 @@ form {
 
 #request {
 	width: 252px;
-	margin: 20px 0 10px;
-	padding: 14px;
+	margin: 19px 0 10px;
+	padding: 11px 13px;
 	border: 1px solid #ccc;
 	font: 300 14px/14px Roboto, Arial;
 	@include border-radius(3px);
@@ -21,6 +21,58 @@ form {
 .btn--form {
 	font: 700 14px/14px Montserrat, Arial, sans-serif;
 	margin: 0;
-	padding: 14px 83px;
+	padding: 11px 82px;
 	@include border-radius(24px);
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+	.contents--ideas {
+		padding: 96px 0 101px;
+
+		h3 {
+			margin: 0 0 24px;
+		}
+	}
+
+	form {
+		label {
+			display: block;
+			padding: 11px 0 41px;
+		}
+	}
+
+	#request {
+		width: 207px;
+		margin: 0 9px 0 0;
+	}
+
+	.btn--form {
+		padding: 11px 21px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.contents--ideas {
+		padding: 97px 0 100px;
+
+		h3 {
+			margin: 0 0 24px;
+		}
+	}
+
+	form {
+		label {
+			display: block;
+			padding: 12px 0 41px;
+		}
+	}
+
+	#request {
+		width: 212px;
+		margin: 0 7px 0 0;
+	}
+
+	.btn--form {
+		padding: 11px 21px;
+	}
 }

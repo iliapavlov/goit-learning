@@ -29,8 +29,79 @@ This is the visible area of carousel.
         height: 100%;
     }
 }
-.grid {
-	margin: 0 0 38px;
+
+.jcarousel-prev,
+.jcarousel-next {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .jcarousel {
+        width: 236px;
+        float: left;
+        margin: 0 10px 0;
+
+        li {
+            width: 236px;
+            height: 400px;
+        }
+
+
+    }
+
+    .jcarousel-prev,
+    .jcarousel-next {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 70px;
+    }
+
+    .jcarousel-prev {
+        top: 35px;
+        left: 15px;
+        background: url(../img/icon_arrow_l.png) 5px 5px no-repeat;
+    }
+
+    .jcarousel-next {
+        top: 35px;
+        right: 15px;
+        background: url(../img/icon_arrow_r.png) 5px 5px no-repeat;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .jcarousel {
+        float: left;
+        margin: 0 10px 0;
+
+        li {
+            height: 400px;
+        }
+    }
+
+    .jcarousel-prev,
+    .jcarousel-next {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 70px;
+    }
+
+    .jcarousel-prev {
+        top: 147px;
+        left: 16px;
+        background: url(../img/icon_arrow_l.png) 5px 5px no-repeat;
+    }
+
+    .jcarousel-next {
+        top: 147px;
+        right: 16px;
+        background: url(../img/icon_arrow_r.png) 5px 5px no-repeat;
+    }
+}
+#gridWrapper {
+	margin: 0 0 37px;
 }
 
 .grid-item {
@@ -58,10 +129,16 @@ This is the visible area of carousel.
 }
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
+	
+	#gridWrapper {
+		margin: 0 0 86px;
+	}
+
 	.grid-item {
 		width: 235px;
 		height: 308px;
 		line-height: 320px;
+		margin: 11px 10px;
 	}
 
 	.grid-item--width2 {
@@ -70,10 +147,15 @@ This is the visible area of carousel.
 }
 
 @media screen and (min-width: 960px) {
+	#gridWrapper {
+		margin: 0 0 89px;
+	}
+
 	.grid-item {
 		width: 300px;
 		height: 309px;
 		line-height: 320px;
+		margin: 10px 10px;
 	}
 
 	.grid-item--width2 {

@@ -1,33 +1,35 @@
 .partner {
 	position: relative;
-	margin: 20px auto 30px;
+	margin: 0 auto 27px;
 	max-width: 220px;
 	text-align: center;
 
 	&:hover .partner__id {
 		color: $primary-color;
-
 	}
 }
 
 .partner__cat {
 	position: absolute;
-	top: 90px;
-	right: 40px;
+	top: 85px;
+	right: 46px;
 	@include border-radius(20px);
 }
 
 .partner__ava {
+	max-width: 120px;
+	max-height: 120px;
 	@include border-radius(63px);
 }
 
 .partner__description {
-	padding: 20px 0 0;
+	padding: 18px 0 0;
+	line-height: 17px;
 }
 
 .partner__id {
 	display: block;
-	margin: 0 0 20px;
+	margin: 0 0 14px;
 	@include transition(500ms, ease-out, 0s);
 }
 
@@ -37,8 +39,46 @@
 
 .btn--partners {
 	margin: 0;
-	padding: 13px 72px;
+	padding: 10px 71px;
 	background-color: transparent;
 	color: $primary-color;
 	border-color: $primary-color;
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+	.partner {
+		float: left;
+		margin: 0 0 55px 147px;
+	}
+
+	.align-right {
+		margin: 0 0 55px 35px;
+	}
+
+	.align-bottom {
+		margin: 0 0 36px 147px;
+	}
+
+	.btn--partners {
+		padding: 11px 27px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.partner {
+		float: left;
+		margin: 0 0 69px 11px;
+	}
+
+	.align-right {
+		margin: 0 0 69px 20px;
+	}
+
+	.align-bottom {
+		margin: 0 0 35px 20px;
+	}
+
+	.btn--partners {
+		padding: 11px 27px;
+	}
 }
