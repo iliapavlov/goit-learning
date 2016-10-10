@@ -24,11 +24,11 @@ define(
 				self.elements.listContainer.html(list);
 			};
 
-			self.showEdit = function(edit, item) {
-				edit.addClass('active');
-				self.elements.inputTemp = edit;
+			self.showEdit = function(itemToEdit, toDoText) {
+				itemToEdit.addClass('active');
+				self.elements.inputTemp = itemToEdit;
 				self.elements.inputTemp.focus();
-				edit.val(item);
+				itemToEdit.val(toDoText);
 			};
 
 			self.hideEdit = function(){

@@ -7,6 +7,11 @@ define(
 			var self = this;
 
 			view.elements.addBtn.on('click', addItem);
+			view.elements.input.on('keypress', function(event) {
+				if (event.keyCode == 13) {
+					addItem();
+				}
+			});
 			view.elements.listContainer.on('click', '.item-delete', removeItem);
 			view.elements.listContainer.on('click', '.item', editItem);
 
@@ -20,23 +25,26 @@ define(
 
 			function removeItem() {
 				var item = $(this).attr('data-value');
-				console.log(this);
 				model.removeItem(item);
 				view.renderList(model.data);
 			}
 
 			function editItem() {
-
-				var item = $(this).find('.item-delete').attr('data-value');
-				var edit = $(this).find('.item-change');
-
-				view.showEdit(edit, item);
-				view.elements.inputTemp.on("focusout", function(){
+				var itemToEdit = $(this).find('.item-change');
+				var toDoText = $(this).find('.item-delete').attr('data-value');
+				function endEdit() {
 					view.hideEdit;
 					var editedItem = view.elements.inputTemp.val();
-					model.editItem(item, editedItem);
+					model.editItem(toDoText, editedItem);
 					view.renderList(model.data);
-				});
+				}
+				view.showEdit(itemToEdit, toDoText);
+				view.elements.inputTemp.on("focusout", endEdit)
+					.on('keypress', function(event) {
+						if (event.keyCode == 13) {
+							endEdit();
+						}
+					});
 			}
 		};
 });
